@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Binary Algorithm</title>
+</head>
+<body>
+<center><h1>Binary Algorithm</h1></center>
+<p>Written by :</p>
+	<b>Manasi Muglikar - 2012A3TS247H</b>
+	<p> This algorithm considers only the first aesthetic thats states that all the nodes that are on the same level are in a straight line as well as the second aesthetic, that in a binary tree, each left son should be posi-tioned left of its father and each right son right of its father. A counter holding the next free x-coordinate is kept for each level of the tree. We assume that each node has a width and height of one unit and that there should be one unit gaps between the levels of the tree and between the nodes across a level. In this and later algorithms, sacing between levels or nodes can be changed by modifying the spacing constants. This algorithm positions parents before children: any tree walk is acceptable so long as each node is visited after its relatives to the left on the same level. All programs assume that the father of the root is nil</p>
+	<ul>
+
+	<li>The first aesthetic </li> <p>states that the nodes that are on the same level(i.e have the same height) should be in a straight line, and the lines defining the levels should be parallel.</p> 
+	<li>The second aesthetic </li> 
+	<p>In a binary tree, a left son should be positioned left of its father and each right son right of its father.</p>
+</ul>
+<div id = "var">
+<p>Variables used :</p>
+		<p>Variables used inside the Structure(tree)</p>
+		<ul>
+			<li>left_son : INTEGER</li>
+			<p>Accepts 1 or 0, true(=1) if left son exists for the given node</p>
+			<li>right_son : INTEGER</li>
+			<p>Accepts 1 or 0, true(=1) if right son exists for the given node</p>
+
+			<li>left_son_index : INTEGER</li>
+			<p>Index of the left child of the current node</p>
+			<li>right_son_index : INTEGER</li>
+			<p>Index of the right child of the current node</p>
+			<li>height : INTEGER</li>
+			<p>The height of the node</p>
+			<li>x : INTEGER</li>
+			<p>The x value of node as calculated</p> 
+			<li>y : INTEGER</li>
+			<p>The y value of node as calculated</p>
+			<li>father : INTEGER</li>
+			<p>Index value of father</p>
+			<li>status : INTEGER</li>
+			<p>Status value of node as calculated or assigned</p>
+			<li>end : INTEGER</li>
+			<p>The variable useful for break condition</p>
+		</ul>
+	</div>
+		<p>Local Variables</p>
+			<ul>
+				<li>root : INTEGER</li>
+				<p>Points to the root element index i.e. = 0 </p>
+				<li>n : INTEGER</li>
+				<p>The number of nodes (as enteredby the user)</p>
+				<li>i : INTEGER</li>
+				<p>General use int</p>
+				<li>max_height : INTEGER</li>
+				<p>The height of the tree</p>
+				<li>next_number : INTEGER</li>
+				<p>Used in the calculation of x</p>
+				<li>fl : INTEGER</li>
+				<p>Flag , used for the breaking point condition</p>
+				<li>j : INTEGER</li>
+				<p>General use int</p>
+				<li>current : INTEGER</li>
+				<p>Points to the current node index</p>
+				<li>t[n+1] : struct tree</li>
+				<p>An array of structure i.e. nodes</p>
+			</ul>
+	</div>
+	<div id="Example">
+		<p><b>An example case</b></p>
+		<img src="Algo1.png">
+		Right side is the terminal where you input the details, the output is seen in the left side window
+	</div>
+</div>
+
+</body>
+
+
+<footer>
+
+</footer>
+</html>
