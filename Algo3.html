@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tidy Tree Drawing Algorithm</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  
+
+</head>
+<body>
+
+<center><h1>Tidy tree drawing Algorithm</h1></center>
+<p>The algorith follows three aesthtic rules that are to be considered while tree drawing. In a first post-order walk, every node of the tree is assigned a preliminary x-coordinate(held in a field of x). In addition, internal nodes are given modifier's which will later be used used to movetheir sons right. During a second pre-order walk, each node is a given a final x-coordinate by summing its preliminary x-coordinate and the modifier's of all the node's ancestors. The y-coordinate depends, as before, on the height of the node.
+<ul>
+
+	<li>The first aesthetic </li> <p>states that the nodes that are on the same level(i.e have the same height) should be in a straight line, and the lines defining the levels should be parallel.</p> 
+	<li>The second aesthetic </li> 
+	<p>states, that in a binary tree, a left son should be posi-tioned left of its father and each right son right of its father.</p>
+	<li>The third aesthetic</li> 
+	<p>states that a parent should be centered over its children.</p>
+</ul>
+</p>
+<div id = "var">
+<p>Variables used :</p>
+	
+		<p>Variables used inside the Structure(tree)</p>
+		<ul>
+			<li>left_son : INTEGER</li>
+			<p>It accepts to values 0 and 1.True(=1) means left son exists for the given node else False(=0)</p>
+			<li>right_son : INTEGER</li>
+			<p>It accepts to values 0 and 1.True(=1) means left son exists for the given node else False(=0)</p>
+			<li>left_son_index : INTEGER</li>
+			<p>The index of the left child of the current node</p>
+			<li>right_son_index : INTEGER</li>
+			<p>The index of the right child of the current node</p>
+			<li>modifier_t : INTEGER</li>
+			<p>Used to calculate the value of x</p>
+			<li>height : INTEGER</li>
+			<p>Gives the height of the node</p>
+			<li>x : INTEGER</li>
+			<p>The x value of node as calculated</p> 
+			<li>y : INTEGER</li>
+			<p>The y value of node as calculated</p>
+			<li>father : INTEGER</li>
+			<p>The index value of father</p>
+			<li>status : INTEGER</li>
+			<p>The status value of node as calculated/assigned</p>
+			<li>end : INTEGER</li>
+			<p>The variable useful for break condition</p>
+		</ul>
+	<div id="Example">
+		<p><b>An example case</b></p>
+		<img src="Algo3.png">
+		Right side is the terminal where you input the details, the output is seen in the left side window
+	</div>
+</div>
+
+
+<footer>
+	<p>Written by :</p>
+	<ul>
+		<li>Manasi Muglikar - 2012A3TS247H</li>
+	</ul>
+</footer>
+</body>
+</html>
